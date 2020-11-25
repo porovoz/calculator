@@ -7,7 +7,7 @@ package calculator;
  */
 public class Calculator {
 
-    public String calculate(String[] expression) {
+    public String calculate(String[] expr) {
         return "0";
     }
 
