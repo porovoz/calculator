@@ -13,6 +13,7 @@ public class Calculator {
         double b = Double.parseDouble(expr[2]);
         double result = 0;
 
+        if (expr.length == 3) {
         switch (op) {
             case "+":
                 result = a + b;
@@ -28,7 +29,7 @@ public class Calculator {
                 break;
             default:
                 return "error";
-        }
+        }} else if (expr.length == 5) {
         op = expr[1] + expr[3];
         double c = Double.parseDouble(expr[4]);
         switch (op) {
@@ -82,6 +83,7 @@ public class Calculator {
                 break;
             default:
                 return "error";
+        }} else {
         }
 
         return String.valueOf(result);
